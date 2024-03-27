@@ -35,6 +35,21 @@ WA.onInit().then(() => {
         WA.removeBubble();
         inBubble.stop();
         outBubble.play(config);
+    });
+
+    WA.room.area.onEnter("chat").subscribe(() => {
+        WA.room.hideLayer("step2");
+        WA.room.showLayer("step3");
+    })
+
+    WA.room.area.onEnter("interaction").subscribe(() => {
+        WA.room.hideLayer("step3");
+        WA.room.showLayer("step4");
+    })
+
+    WA.room.area.onEnter("silent").subscribe(() => {
+        WA.room.hideLayer("step4");
+        WA.room.showLayer("step5");
     })
 
     // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure
