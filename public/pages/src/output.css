@@ -610,6 +610,10 @@ video {
   margin-top: 5rem;
 }
 
+.ml-4 {
+  margin-left: 1rem;
+}
+
 .flex {
   display: flex;
 }
@@ -624,6 +628,14 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-20 {
+  height: 5rem;
 }
 
 .w-full {
@@ -663,12 +675,24 @@ video {
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
+.rounded {
+  border-radius: 0.25rem;
+}
+
 .bg-\[url\(\'\.\.\/assets\/background\.jpg\'\)\] {
   background-image: url('../assets/background.jpg');
 }
 
 .bg-\[url\(\'\.\.\/assets\/bg-discussion\.png\'\)\] {
   background-image: url('../assets/bg-discussion.png');
+}
+
+.bg-\[url\(\'\.\.\/assets\/bg-silent\.png\'\)\] {
+  background-image: url('../assets/bg-silent.png');
+}
+
+.bg-\[url\(\'\.\.\/assets\/bg-ui\.png\'\)\] {
+  background-image: url('../assets/bg-ui.png');
 }
 
 .bg-cover {
@@ -678,6 +702,11 @@ video {
 .px-20 {
   padding-left: 5rem;
   padding-right: 5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .px-8 {
